@@ -149,11 +149,16 @@
 
 			id c = [JSCocoaController sharedController];
 			JSValueRef vcref = [c evalJSString:jscode];
-
-			JSStringRef resultStringJS = JSValueToStringCopy([c ctx], vcref, NULL);
-			NSString* resultString = (NSString*)JSStringCopyCFString(kCFAllocatorDefault, resultStringJS);
-			JSStringRelease(resultStringJS);
-
+			
+			NSString* resultString;
+			if (vcref) {
+				JSStringRef resultStringJS = JSValueToStringCopy([c ctx], vcref, NULL);
+				resultString = (NSString*)JSStringCopyCFString(kCFAllocatorDefault, resultStringJS);
+				JSStringRelease(resultStringJS);
+			} else {
+				resultString = @"Error from evalJSString: nil vcref.";
+			}
+			
 			const char* response = [resultString cStringUsingEncoding:NSASCIIStringEncoding];
 
 			const char* header = "HTTP/1.0 200 OK\r\n\r\n";
