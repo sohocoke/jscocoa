@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13164F2F14C21E0900D9FBDF /* console.html in Resources */ = {isa = PBXBuildFile; fileRef = 13164F2C14C21E0900D9FBDF /* console.html */; };
+		13164F3014C21E0900D9FBDF /* Httpd.m in Sources */ = {isa = PBXBuildFile; fileRef = 13164F2E14C21E0900D9FBDF /* Httpd.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -38,6 +40,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13164F2C14C21E0900D9FBDF /* console.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = console.html; sourceTree = "<group>"; };
+		13164F2D14C21E0900D9FBDF /* Httpd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Httpd.h; sourceTree = "<group>"; };
+		13164F2E14C21E0900D9FBDF /* Httpd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Httpd.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* iPhoneTest2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhoneTest2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -111,6 +116,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13164F2A14C21DA800D9FBDF /* KuHttpd */ = {
+			isa = PBXGroup;
+			children = (
+				13164F2C14C21E0900D9FBDF /* console.html */,
+				13164F2D14C21E0900D9FBDF /* Httpd.h */,
+				13164F2E14C21E0900D9FBDF /* Httpd.m */,
+			);
+			path = KuHttpd;
+			sourceTree = "<group>";
+		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				3DB581EF0EA17C9000EB80D9 /* JSCocoa */,
+				13164F2A14C21DA800D9FBDF /* KuHttpd */,
 				3D35B89E120B08F000E260FB /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -305,6 +321,7 @@
 				3D7A7E270EA2216D009DE07C /* iPhone.bridgesupport in Resources */,
 				3D7A818F0EA238D3009DE07C /* hiPointCount.png in Resources */,
 				3D7A81900EA238D3009DE07C /* lowPointCount.png in Resources */,
+				13164F2F14C21E0900D9FBDF /* console.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +349,7 @@
 				3D97DA7110425AAA00E2E233 /* prep_cif.c in Sources */,
 				3D97DA7210425AAA00E2E233 /* raw_api.c in Sources */,
 				3D97DA7310425AAA00E2E233 /* types.c in Sources */,
+				13164F3014C21E0900D9FBDF /* Httpd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

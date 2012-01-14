@@ -16,6 +16,9 @@
 
 		- (void)applicationDidFinishLaunching:(UIApplication *)application
 		{
+			// start the repl httpd
+			[[Httpd alloc] initWithPort:38880]
+			
 			// Table view background
 			this.viewController.view.backgroundColor = UIColor.groupTableViewBackgroundColor
 			this.window.addSubview(this.viewController.view)
